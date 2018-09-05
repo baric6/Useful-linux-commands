@@ -1,0 +1,26 @@
+to make a archive library file
+    if you have a bunch of methods you can combine them
+    in a library file by using:
+        $ ar crv lib.a function1.o function2.o
+            ex..
+                //display whats in the lib
+                //after creation
+                a - function1.o
+                a - function2.o    
+
+the ranlib lib.a makes a index of the diffrent methods
+archived/table of contents of methods(in linux returns
+nothing) 
+    $ ranlib lib.a
+
+to compile the program with the libray pakage use:
+    $ cc -o program program.o lib.a
+    $ ./program
+        will execute the library methods with program
+
+useful exsamples:
+                       UNIX            DOS
+    Object Modules -  func.o          FUNC.OBJ
+    Static Library -  lib.a           LIB.LIB
+    Program run    -  ./program       PROGRAM.EXE
+    

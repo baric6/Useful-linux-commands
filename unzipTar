@@ -1,0 +1,3 @@
+To unzip tar files :: say the file is abc.tar.gz then do the following
+
+tar -xzf abc.tar.gz
