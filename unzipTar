@@ -1,3 +1,48 @@
-To unzip tar files :: say the file is abc.tar.gz then do the following
+notes by baric :}
 
-tar -xzf abc.tar.gz
+tar comes from when you stored archive on magnetic tape 
+tar.gz is nothing but a archive that is compressed
+
+X = tells tar to exstract the files 
+v = stands for verbose this will list all the files one by one 
+z = tells tar to ucompress the file (gzip)
+f = tell tar what file to work with
+
+-A tarbar is a bundle of archives zipped together
+
+-To unzip tar files :: say the file is abc.tar.gz then do the following
+in to containing folder
+
+$ tar -xvzf abc.tar.gz
+or
+$ tar -xzf abc.tar.gz
+
+-to uncompress to a diffrent directory then containing 
+
+$ tar -xvzf abc.tar.gz-C/path/to/somedirectory
+
+-to exstract file.doc from a tarball 
+
+$ tar -xvzf abc.tar.gz test.doc
+
+-to view detailed table of contents of all files in archive 
+
+$tar -tvf abc.tar.gz
+
+-to exstract gzip without tar 
+
+$ gunzip abc.gz
+
+-Exstracting .tar.bz2 files
+
+this is the same as gzip decompresstion the major diffrence z option is 
+replaced with j
+
+j = z
+j = decompressed bz2 files 
+
+$ tar xvjf abc.tar.bz2
+
+
+
+
